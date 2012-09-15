@@ -10,7 +10,7 @@ Installation and Configuration
 ------------------------------
 
  * Copy gossip_girl.js into your statsd backends directory
- * Add its config parameters to your statsd config file (see exampleGossipConfig.js, below)
+ * Add its config parameters to your statsd config file (see exampleGossipConfig.js)
  * Start the Daemon:
 
     node stats.js /path/to/config
@@ -28,3 +28,9 @@ Has nothing to do with the TV show, I swear. No, really.
 [node]: http://nodejs.org
 [blog post]: http://blog.wanelo.com
 
+
+Shout Outs
+---------
+This is a shameless ripoff of the repeater statsd backend by Theo Schlossnagle.
+
+And thanks to the Etsy team for making such a nifty tool.
