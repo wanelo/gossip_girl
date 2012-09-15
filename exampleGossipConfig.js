@@ -2,7 +2,9 @@
 Required Variables:
 
   backends:         an array of backends to load. 
-                    Must include "./backends/gossip_girl"
+                    Must include either "./backends/gossip_girl" if the file was copied directly.
+                    Or simply include "gossip_girl" if it was installed via npm.
+                
 
   gossip_girl:      an array of hashes of the for host: and port:
                     that details other statsd servers to which the received
@@ -27,5 +29,7 @@ Optional Variables:
       "host": "observer.example.com",
       "port": 8125
     }
-  ]
+  ],
+  "flushInterval": 1000,
+  "dumpMessages": true 
 }
