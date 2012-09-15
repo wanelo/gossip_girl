@@ -11,9 +11,9 @@ We ([Wanelo][wanelo]) [blogged][blog post] about how it works and why we created
 Installation and Configuration
 ------------------------------
 
- * Copy gossip_girl.js into your statsd backends directory
+ * Either put gossip_girl.js into your statsd backends directory, or "npm install gossip_girl"
  * Add its config parameters to your statsd config file (see exampleGossipConfig.js)
- * Start the Daemon:
+ * Start the statsd daemon:
 
     node stats.js /path/to/config
 
@@ -22,7 +22,7 @@ Gossip Girl?
 ---------
 
 Cause she quite agreeably listens to everything you say. But then turns around 
-and prattles to anyone who'll listen.
+and blabs to anyone who'll listen.
 
 Has nothing to do with the TV show, I swear. No, really.
 
@@ -33,6 +33,6 @@ Has nothing to do with the TV show, I swear. No, really.
 
 Shout Outs
 ---------
-This is a shameless ripoff of the repeater statsd backend by Theo Schlossnagle.
+Initial cut was inspired by the repeater backend by Theo Schlossnagle.
 
 And thanks to the Etsy team for making such a nifty tool.
