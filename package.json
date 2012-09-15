@@ -1,0 +1,19 @@
+{
+  "name"        : "gossip_girl",
+  "description" : "A pluggable statsd backend to aggregate data and periodically forward to other statsd daemons",
+  "repository"  : {
+                   "type" : "git", 
+                   "url"  : "git://github.com/wanelo/gossip_girl.git"
+                   },
+  "keywords"    : "statsd",
+  "author"      : "Zo Obradovic <zo@wanelo.com>",
+  "main"        : "./backends/gossip_girl.js",
+  "version"     : "0.1.3",
+  "engines"     : {
+                  "node"  : ">=0.6"
+                  },
+  "license"     : "MIT",
+  "dependencies": {
+                  "statsd"    : ">=0.4"
+                  }
+}

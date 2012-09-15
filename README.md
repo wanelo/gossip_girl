@@ -3,6 +3,8 @@ gossip_girl
 
 A pluggable [Node.js][node] statsd backend that periodically flushes aggregated data to downstream statsd daemons.
 
+In one way, Gossip Girl is similar to the repeater backend, as it forwards data to another statsd. It differs from repeater in that it doesn't send every packet as it recieves it - it prefers to wait a configurable amount of ms before doing so.  This is particularly useful for aggregating data locally before sending across the network.
+
 We ([Wanelo][wanelo]) [blogged][blog post] about how it works and why we created it.
 
 
