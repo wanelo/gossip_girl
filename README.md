@@ -10,7 +10,7 @@ Installation and Configuration
 ------------------------------
 
  * Copy gossip_girl.js into your statsd backends directory
- * Add its config parameters to your statsd config file (see exampleConfig.js, below)
+ * Add its config parameters to your statsd config file (see exampleGossipConfig.js, below)
  * Start the Daemon:
 
     node stats.js /path/to/config
