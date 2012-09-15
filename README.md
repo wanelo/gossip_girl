@@ -22,6 +22,8 @@ Gossip Girl?
 Cause she quite agreeably listens to everything you say. But then turns around 
 and prattles to anyone who'll listen.
 
+Has nothing to do with the TV show, I swear. No, really.
+
 [wanelo]: http://wanelo.com
 [node]: http://nodejs.org
 [blog post]: http://blog.wanelo.com
