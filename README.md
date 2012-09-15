@@ -1,7 +1,7 @@
 gossip_girl
 ======
 
-A pluggable [Node.js][node] statsd backend that periodically flushes aggregated data to another statsd daemon.
+A pluggable [Node.js][node] statsd backend that periodically flushes aggregated data to downstream statsd daemons.
 
 We ([Wanelo][wanelo]) [blogged][blog post] about how it works and why we created it.
 
