@@ -29,11 +29,10 @@ GossipGirl.prototype.process = function(time_stamp, metrics) {
   var stats, packet
 
   var stats_map = {
-    counters: { suffix: "c",  data: metrics.counters, name: "counter" },
-    gauges:   { suffix: "g",  data: metrics.gauges,   name: "gauge" },
-    timers:   { suffix: "ms", data: metrics.timers,   name: "timer" }
+    counters: { data: metrics.counters, suffix: "c",  name: "counter" },
+    gauges:   { data: metrics.gauges,   suffix: "g",  name: "gauge" },
+    timers:   { data: metrics.timers,   suffix: "ms", name: "timer" }
   }
-
 
   self.sock = dgram.createSocket("udp4")
   for (var i = 0; i < hosts.length; i++) {
@@ -44,7 +43,7 @@ GossipGirl.prototype.process = function(time_stamp, metrics) {
         packet = self.format(key, stats.data[key], stats.suffix)
 
         if (self.statsd_config.dumpMessages) {
-          util.log ("Gossiping " + stats.name + ": " + packet)
+          util.log ("Gossiping about " + stats.name + ": " + packet)
         }
 
         self.gossip(packet, hosts[i].host, hosts[i].port)
