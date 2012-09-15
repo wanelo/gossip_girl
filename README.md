@@ -19,8 +19,8 @@ Installation and Configuration
 Gossip Girl?
 ---------
 
-Cause she quite agreeably listens to everything you tell her. And then she turns around 
-and prattles it all to anyone who'se listening.
+Cause she quite agreeably listens to everything you say. But then turns around 
+and prattles to anyone who'll listen.
 
 [wanelo]: http://wanelo.com
 [node]: http://nodejs.org
