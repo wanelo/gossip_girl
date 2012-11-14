@@ -19,7 +19,7 @@ Installation and Configuration
 Gossip Girl?
 ---------
 
-Cause she quite agreeably listens to everything you say. But then turns around 
+Because she quite agreeably listens to everything you say. But then turns around 
 and blabs to anyone who'll listen.
 
 Has nothing to do with the TV show, I swear. No, really.
