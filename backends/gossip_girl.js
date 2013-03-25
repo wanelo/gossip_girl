@@ -40,14 +40,20 @@ GossipGirl.prototype.process = function(time_stamp, metrics) {
       stats = stats_map[type]
       for (key in stats.data) {
         if (self.ignorable.indexOf(key) >= 0) continue
-        packet = self.format(key, stats.data[key], stats.suffix)
 
-        if (self.statsd_config.dumpMessages) {
-          util.log ("Gossiping about " + stats.name + ": " + packet)
+        if(type == 'timers') {
+          metric_data = stats.data[key]
+        } else {
+          metric_data = [stats.data[key]]
         }
-
-        self.gossip(packet, hosts[i].host, hosts[i].port)
-      } 
+        for(var j = 0; j < metric_data.length; j++) {
+          packet = self.format(key, metric_data[j], stats.suffix)
+          if (self.statsd_config.dumpMessages) {
+            util.log ("Gossiping about " + stats.name + ": " + packet)
+          }
+          self.gossip(packet, hosts[i].host, hosts[i].port)
+        }
+      }
     }
   }
 }
