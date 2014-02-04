@@ -27,7 +27,11 @@ Optional Variables:
   "gossip_girl": [
     {
       "host": "observer.example.com",
-      "port": 8125
+      "port": 8125,
+      "packageJoin": true,
+      "packageLimit": 8192,
+      "verbose": true,
+      "delay": 20
     }
   ],
   "flushInterval": 1000,
