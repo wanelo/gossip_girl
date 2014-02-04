@@ -8,7 +8,7 @@
   "keywords"    : "statsd",
   "author"      : "Zo Obradovic <zo@wanelo.com>",
   "main"        : "./backends/gossip_girl.js",
-  "version"     : "1.0.1",
+  "version"     : "1.0.2",
   "engines"     : {
                   "node"  : ">=0.6"
                   },
