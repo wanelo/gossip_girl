@@ -20,7 +20,7 @@ GossipGirl.prototype.gossip = function(packet, host, port) {
 }
 
 GossipGirl.prototype.format = function (key, value, suffix) {
-  return new Buffer("'" + key + "':" + value + "|" + suffix)
+  return Buffer.from("'" + key + "':" + value + "|" + suffix)
 }
 
 GossipGirl.prototype.process = function(time_stamp, metrics) {
